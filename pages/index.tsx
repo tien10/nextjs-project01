@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Image from '../assets/macbook01.jpg'
+import BGImage from '../assets/macbook01.jpg'
 
 const Home: React.FC = () => {
   let firstName: number = 10;
@@ -16,11 +16,12 @@ const Home: React.FC = () => {
       <Head>
         <title>Create Next App Edit</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="/css/global.css"/>
+        <link rel="stylesheet" href="/css/global.css" />
       </Head>
 
       <main className={styles.main}>
-        <img src={Image}/>
+        {/* <img src="/images/macbook01.jpg" style={{height:100, width:100}}/> */}
+        <img src={BGImage} style={{ height: 100, width: 100 }} />
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js! {firstName}</a>
         </h1>
