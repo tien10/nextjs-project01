@@ -19,7 +19,7 @@ export default function AdminUser() {
       </Head>
       <h1>Hello AdminUser</h1>
       <Link href="/login">
-        <a className="active">Login by a tag</a>
+        <button className="active">Login by a tag</button>
       </Link>
       <button onClick={handleOnClick}>Login</button>
     </>
